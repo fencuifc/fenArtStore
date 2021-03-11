@@ -1,14 +1,15 @@
-import React, {Component} from "react";
-import {BrowserRouter, Link, Switch, Route} from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Cart from "../components/Cart";
 import Home from "../components/Home";
 import Game from "../components/Game";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
+import {PropTypes} from "prop-types";
 
-class NavBar extends Component{
-	render(){
-		return (
-			<BrowserRouter>
+class NavBar extends Component {
+    render() {
+        return (
+            <BrowserRouter>
 				<div>
 					<nav className="nav-container">
 						<div className="navBar">
@@ -34,13 +35,16 @@ class NavBar extends Component{
 		        	</Switch>
 				</div>
 			</BrowserRouter>
-		)
-	}
+        );
+    }
 
 }
-const mapStateToProps = (state)=>{
-	return{
-		totalQuantity: state.cart.totalQuantity
-	}
-}
+const mapStateToProps = (state) => {
+    return {
+        totalQuantity: state.cart.totalQuantity
+    };
+};
+NavBar.propTypes = {
+	totalQuantity: PropTypes.totalQuantity
+};
 export default connect(mapStateToProps)(NavBar);

@@ -5,7 +5,7 @@ import cart from "./cart";
 import menu from "./menu";
 // import secondCounter from './exampleReducer';
 
-export default combineReducers({cart,menu});
+export default combineReducers({ cart, menu });
 
 // Example for combining multiple reducers:
 // export default combineReducers({ count, secondCounter });
