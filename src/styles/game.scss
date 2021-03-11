@@ -1,0 +1,39 @@
+.tic-tac-container{
+	border: black 1px solid;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	.tic-tac-item{
+		width:100px;
+		height:100px;
+		border: black 1px solid;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	border: black 1px solid;
+		.tic,.tic-reverse{
+			width: 50px;
+			height: 5px;
+			position:relative;
+			left:25px;
+    		background-color: black;
+    		transform: rotate(45deg);
+		}
+		.tic-reverse{
+			left: -20px;
+			transform: rotate(-45deg);
+		}
+		.tac{
+			width: 50px;
+		    margin: auto;
+		    height: 50px;
+		    border-radius: 45px;
+		    border: black 5px solid;
+		}
+	}
+}

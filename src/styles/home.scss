@@ -1,0 +1,99 @@
+.home{
+  &.container{
+    width: 95%;
+  }
+  .page-content{
+    display: flex;
+    .Menu, .box{
+      width: 250px;
+    }
+    .box {
+      flex-grow: 1;
+    }
+  }
+  .page-desc{
+    max-width: 680px;
+    margin: 0px auto 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    p{
+      font-size: 16px;
+      font-family: $font-main;
+      text-align: center;
+      color: rgb(51, 51, 51);
+      margin: 25px 0px 0px;
+      line-height: 1.5em;
+    }
+  }
+  .page-header{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    width: 100%;
+    font-family: $font-head;
+    height:75px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    .header-title{
+      color: rgb(51, 51, 51);
+      font-family: "Crimson Text", serif;
+      font-size: 30px;
+      font-weight: 400;
+      margin: 0px;
+    }
+  }
+  .box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+      width: 45%;
+      .item-img img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+
+ .cart-image{
+  .btn-floating.halfway-fab{
+    background-color: rgb(34, 31, 32);
+  }
+}
+.card-content{
+  font-family: $font-main;
+ 
+  .title{
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+  }
+  .size{
+    padding-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0px;
+    font-size: 17px;
+    color: rgb(102, 102, 102);
+  }
+  .author{
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+  }
+  .price{
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+  }
+  .author-price{
+    padding-top: 18px;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+  }
+}
+}

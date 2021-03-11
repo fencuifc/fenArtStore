@@ -1,0 +1,12 @@
+{
+	"menu":[
+		{
+			"filterName":"category",
+			"filterType":["acrylic","drawing","watercolor"]
+		},
+		{
+			"filterName":"style",
+			"filterType":["modern","classic", "figurative"]
+		}
+	]
+}

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import Counter from "./containers/Counter";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import Cart from "./components/Cart"
 
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <div className="App">
+      	<NavBar />
+      </div>
     );
   }
 }

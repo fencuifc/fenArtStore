@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.home.container {
+  width: 95%; }
+
+.home .page-content {
+  display: flex; }
+  .home .page-content .Menu, .home .page-content .box {
+    width: 250px; }
+  .home .page-content .box {
+    flex-grow: 1; }
+
+.home .page-desc {
+  max-width: 680px;
+  margin: 0px auto 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .home .page-desc p {
+    font-size: 16px;
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    color: #333333;
+    margin: 25px 0px 0px;
+    line-height: 1.5em; }
+
+.home .page-header {
+  border-bottom: 1px solid #eeeeee;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  height: 75px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center; }
+  .home .page-header .header-title {
+    color: #333333;
+    font-family: "Crimson Text", serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px; }
+
+.home .box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .home .box .card {
+    width: 45%; }
+    .home .box .card .item-img img {
+      width: 200px;
+      height: 200px; }
+
+.home .cart-image .btn-floating.halfway-fab {
+  background-color: #221f20; }
+
+.home .card-content {
+  font-family: "Crimson Text", serif; }
+  .home .card-content .title {
+    font-size: 23px;
+    color: #333333; }
+  .home .card-content .size {
+    padding-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0px;
+    font-size: 17px;
+    color: #666666; }
+  .home .card-content .author {
+    font-size: 23px;
+    color: #333333; }
+  .home .card-content .price {
+    font-size: 23px;
+    color: #333333; }
+  .home .card-content .author-price {
+    padding-top: 18px;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center; }
+
+.cart {
+  background-color: #f3f3f3;
+  width: 100%;
+  margin: 0; }
+  .cart .container {
+    background-color: white;
+    padding: 30px 30px; }
+    .cart .container h5 {
+      margin-bottom: 24px; }
+    .cart .container .collection {
+      border: none; }
+    .cart .container .cart-item {
+      display: flex;
+      padding: 15px;
+      border-bottom: 1px solid #f3f3f3;
+      justify-content: space-evenly; }
+      .cart .container .cart-item .item-img {
+        width: 50%;
+        height: auto; }
+        .cart .container .cart-item .item-img img {
+          width: 100%;
+          height: 100%; }
+      .cart .container .cart-item .item-desc p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: lighter; }
+      .cart .container .cart-item .item-desc .title {
+        font-weight: bold;
+        font-style: italic;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 2px;
+        font-size: 21px;
+        line-height: 1.5; }
+      .cart .container .cart-item .item-desc .author {
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 1.5; }
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #221f20; }
+
+.nav-container .logo {
+  padding-left: 20px; }
+
+.Menu-header .header-msg {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 13px 0px;
+  border-top: 1px solid #eeeeee; }
+
+.Menu-list {
+  display: flex;
+  flex-direction: column; }
+  .Menu-list label {
+    display: block;
+    font-size: 22px;
+    padding-bottom: 10px; }
+    .Menu-list label span {
+      font-size: 22px;
+      font-size: 14px;
+      font-family: Helvetica, sans-serif;
+      color: #333333; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  border: 2px solid #666; }
+
+body {
+  background: white;
+  color: black;
+  font-size: 36px;
+  font-family: "Crimson Text", serif; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJidW5kbGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
