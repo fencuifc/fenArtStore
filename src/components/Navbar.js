@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Cart from "../components/Cart";
 import Home from "../components/Home";
 import Game from "../components/Game";
+import Checkout from "../components/Checkout";
 import { connect } from "react-redux";
 import {PropTypes} from "prop-types";
 
@@ -28,6 +29,9 @@ class NavBar extends Component {
 				          </Route>
 				          <Route path="/game">
 				          	<Game />
+				          </Route>
+				          <Route path="/checkout">
+				          	<Checkout />
 				          </Route>
 				          <Route path="/">
 				            <Home />

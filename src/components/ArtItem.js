@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 import {PropTypes} from "prop-types";
+import {Link} from "react-router-dom";
 
 class ArtItem extends Component {
     handleClick = (id) => {
-        //console.log("handleCLick fuc");
         this.props.addToCart(id);
     }
     render() {
@@ -13,7 +13,9 @@ class ArtItem extends Component {
             <div className="card" key={this.props.item.id}>
 				<div className="card-image">
 					<img src={this.props.item.imgUrl} alt = {this.props.item.title}/>
-					<span  className="btn-floating halfway-fab waves-effect waves-light black" onClick={()=>this.handleClick(this.props.item.id)}><i className="material-icons">add</i></span>					
+					<Link to="/cart"  className="btn-floating halfway-fab waves-effect waves-light black" onClick={()=>this.handleClick(this.props.item.id)}>
+						<a className="material-icons">add</a>
+					</Link>				
 				</div>
 				<div className="card-content">
 					<p className="title">{this.props.item.title}</p>

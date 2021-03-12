@@ -20,7 +20,7 @@ class MenuItem extends Component {
 					{this.props.filterType.map((item, index)=>	{
 							let uniqueId = `menu-list-${this.props.filterName}${index}`;	
 							return (
-								<label key={filterName} htmlFor={uniqueId}>
+								<label key={index} htmlFor={uniqueId}>
 									<input type="checkbox" id={uniqueId} name={uniqueId} value={item} onChange={()=>{this.handleOnChange(event);}}/>
 									<span>{item}</span>
 								</label>

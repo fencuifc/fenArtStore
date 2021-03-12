@@ -1,49 +1,35 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { changeTotalPrice } from "../actions/cartActions";
+import React, {Component} from "react";
 import {PropTypes} from "prop-types";
+import { connect } from "react-redux";
+import AddressForm from "../components/AddressForm";
 
 class Checkout extends Component {
+	render(){
+		return (
+			<div>
+				<h1>Checkout</h1>
+				<div>
+					<h2>Shipping Address</h2>
+					<AddressForm />
+				</div>
 
-    handleOnChange = (event) => {
-        let checked = event.target.checked;
-        let shippingFee = checked ? event.target.value : event.target.value * (-1);
-
-        this.props.changeTotalPrice(Number(shippingFee));
-    }
-    render() {
-        return (
-            <div className="container">
-				<div className="collection">
-					<div className="collection-item">
-						<label>
-							<input type="checkbox" name="shipping" value="6" onChange={()=>{this.handleOnChange(event);}}></input>
-							<span>shipping(+$6)</span>
-						</label>
+				<div>
+					<div>
+						<h2>Payment Method</h2>
 					</div>
-					<div className="collection-item">
-						<b>Total: $ {this.props.total}</b>
+					<div>
+						<h2>Billing Address</h2>
 					</div>
 				</div>
-				<div className="checkout">
-                    <button className="waves-effect waves-light btn black">Checkout</button>
-                </div>
+				
 			</div>
-        );
-    }
+		);
+	}
 }
-const mapStateToProps = (state) => {
-    return {
-        total: state.cart.totalPrice
-    };
+const mapDispatchToProps = (state) => {
+
 };
-const mapDispatchToProps = (dispatch) => {
-    return {
-        changeTotalPrice: (price) => { dispatch(changeTotalPrice(price)); }
-    };
-};
-Checkout.propTypes = {
-    total: PropTypes.number,
-    changeTotalPrice: PropTypes.func
+const mapStateToProps = (dispatch) => {
+
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Checkout);

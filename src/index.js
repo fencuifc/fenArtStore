@@ -11,8 +11,8 @@ import 'babel-polyfill';
 //**********************
 render( // By using <Provider />, the store will be made available for all the components in your application.
     <Provider store={store}>
-    <App />
-  </Provider>,
+    	<App />
+  	</Provider>,
     document.getElementById("root")
 );
 

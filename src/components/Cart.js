@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import CartItem from "../components/CartItem";
-import Checkout from "../components/Checkout";
+import OrderSummary from "../components/OrderSummary";
 import {PropTypes} from "prop-types";
 
 class Cart extends Component {
@@ -19,7 +19,7 @@ class Cart extends Component {
 						}
 					</ul>
 				</div>
-				<Checkout />
+				<OrderSummary />
 			</div>
         );
     }
