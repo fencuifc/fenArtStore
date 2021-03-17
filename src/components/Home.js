@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchStoreItems } from "../actions/homeActions";
+import {requestAddressInfo} from "../actions/checkoutActions";
 import ArtItem from "../components/ArtItem";
 import Menu from "../components/Menu";
 import {PropTypes} from "prop-types";
@@ -51,7 +52,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToPrps = (dispatch) => {
     return {
         addToCart: (id) => { dispatch(addToCart(id)); },
-        requestStoreItems: () => { dispatch(fetchStoreItems()); }
+        requestStoreItems: () => { dispatch(fetchStoreItems());}
     };
 };
 Home.propTypes = {

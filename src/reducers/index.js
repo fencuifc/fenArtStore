@@ -3,9 +3,6 @@ import { combineReducers } from "redux";
 
 import cart from "./cart";
 import menu from "./menu";
-// import secondCounter from './exampleReducer';
+import checkout from "./checkout";
 
-export default combineReducers({ cart, menu });
-
-// Example for combining multiple reducers:
-// export default combineReducers({ count, secondCounter });
+export default combineReducers({ cart, menu, checkout });

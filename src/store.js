@@ -10,5 +10,4 @@ let store = createStore(
         thunkMiddleware, // lets us dispatch() functions
         loggerMiddleware // neat middleware that logs actions
     )); // Creates the store from the State received from the reducer(s)
-
 export default store;

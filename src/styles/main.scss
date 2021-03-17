@@ -8,6 +8,8 @@
 @import 'nav';
 @import 'menu';
 @import 'game';
+@import 'checkout';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,6 +63,22 @@ body {
   color: black;
   font-size: 36px;
   font-family: $font-main;
+}
+
+#root {
+  input[type=text], input[type=number], input[type=tel], input[type=password], input[type=email] {
+      padding: 15px;
+      font-size: 14px;
+      outline: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: rgb(232, 240, 254);
+      border: 1px solid #f3f3f3;
+      transition: 0.2s ease-in-out border-color;
+  }
+  select {
+    display: block;
+  }
 }
 
 
